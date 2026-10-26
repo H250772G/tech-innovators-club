@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join / Contact | Tech Innovators Club</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="pageLoaded()">
+  <header>
+    <div class="brand"><img src="images/logo.svg" alt="Club logo" width="50" height="50"><h1>Tech Innovators Club</h1></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Activities &amp; Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="join.html" class="active">Join / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Join or Contact Us</h2>
+      <p>Fill in the form below. Fields marked * must be filled in.</p>
+      <form id="joinForm" action="process.php" method="post" onsubmit="return validateForm()">
+        <label for="fullname">Full name *</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Tendai Moyo">
+
+        <label for="regnumber">Registration number *</label>
+        <input type="text" id="regnumber" name="regnumber" placeholder="e.g. H260123A">
+
+        <label for="email">Email *</label>
+        <input type="text" id="email" name="email" placeholder="you@example.com">
+
+        <label for="phone">Phone number *</label>
+        <input type="text" id="phone" name="phone" placeholder="e.g. 0771234567">
+
+        <label for="programme">Programme of study *</label>
+        <select id="programme" name="programme">
+          <option value="">-- choose --</option>
+          <option>Computer Science</option>
+          <option>Information Systems</option>
+          <option>Software Engineering</option>
+          <option>Information Technology</option>
+          <option>Other</option>
+        </select>
+
+        <p class="label">I want to: *</p>
+        <label class="inline"><input type="radio" name="purpose" value="Join the club"> Join the club</label>
+        <label class="inline"><input type="radio" name="purpose" value="Contact the club"> Contact the club</label>
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us a little about yourself or ask a question"></textarea>
+
+        <p id="errorBox" class="error"></p>
+        <button type="submit" class="btn">Send</button>
+        <button type="reset" class="btn secondary">Clear</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tech Innovators Club | Harare Institute of Technology</p>
+    <p>Email: <a href="mailto:techclub@example.com">techclub@example.com</a></p>
+    <button id="themeBtn" onclick="toggleTheme()">Switch Dark/Light Mode</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

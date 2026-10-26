@@ -1,0 +1,4 @@
+Options -Indexes
+<Files "submissions.txt">
+  Require all denied
+</Files>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Tech Innovators Club</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="pageLoaded()">
+  <header>
+    <div class="brand"><img src="images/logo.svg" alt="Club logo" width="50" height="50"><h1>Tech Innovators Club</h1></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Activities &amp; Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="join.html">Join / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 id="greeting">Welcome!</h2>
+      <p id="clubTagline">Learn. Build. Innovate.</p>
+      <a class="btn" href="join.html">Join the Club</a>
+    </section>
+
+    <section class="card">
+      <h2>Who are we?</h2>
+      <p>The <strong>Tech Innovators Club</strong> is a student society for people who love computers, coding and new ideas. We meet every week to learn together, build projects and have fun.</p>
+      <h3>Why join us?</h3>
+      <ul>
+        <li>Learn to code in a friendly group</li>
+        <li>Take part in hackathons and competitions</li>
+        <li>Meet guest speakers from industry</li>
+        <li>Build projects for your portfolio</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Quick Facts</h2>
+      <p id="clubFacts"></p>
+      <button onclick="showNextEvent()">Show me the next event</button>
+      <p id="nextEvent" class="highlight"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tech Innovators Club | Harare Institute of Technology</p>
+    <p>Email: <a href="mailto:techclub@example.com">techclub@example.com</a></p>
+    <button id="themeBtn" onclick="toggleTheme()">Switch Dark/Light Mode</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

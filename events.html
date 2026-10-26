@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities & Events | Tech Innovators Club</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="pageLoaded()">
+  <header>
+    <div class="brand"><img src="images/logo.svg" alt="Club logo" width="50" height="50"><h1>Tech Innovators Club</h1></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html" class="active">Activities &amp; Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="join.html">Join / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Our Activities</h2>
+      <ul>
+        <li>Weekly coding workshops</li>
+        <li>Semester hackathon</li>
+        <li>Guest speaker talks</li>
+        <li>Robotics and electronics demos</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Upcoming Events</h2>
+      <p>Click a button to filter the events:</p>
+      <div class="filters">
+        <button onclick="filterEvents('All')">All</button>
+        <button onclick="filterEvents('Workshop')">Workshops</button>
+        <button onclick="filterEvents('Competition')">Competitions</button>
+        <button onclick="filterEvents('Talk')">Talks</button>
+      </div>
+      <div id="eventList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tech Innovators Club | Harare Institute of Technology</p>
+    <p>Email: <a href="mailto:techclub@example.com">techclub@example.com</a></p>
+    <button id="themeBtn" onclick="toggleTheme()">Switch Dark/Light Mode</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

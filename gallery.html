@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Tech Innovators Club</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="pageLoaded()">
+  <header>
+    <div class="brand"><img src="images/logo.svg" alt="Club logo" width="50" height="50"><h1>Tech Innovators Club</h1></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Activities &amp; Events</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="join.html">Join / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Photo Gallery</h2>
+      <p>Move your mouse over a photo to see its name. Click a photo to make it big.</p>
+      <div class="gallery">
+        <img src="images/photo1.svg" alt="Coding workshop" data-caption="Coding Workshop" onclick="openPhoto(this)" onmouseover="showCaption(this)" onmouseout="clearCaption()">
+        <img src="images/photo2.svg" alt="Hackathon" data-caption="Hackathon" onclick="openPhoto(this)" onmouseover="showCaption(this)" onmouseout="clearCaption()">
+        <img src="images/photo3.svg" alt="Guest speaker" data-caption="Guest Speaker" onclick="openPhoto(this)" onmouseover="showCaption(this)" onmouseout="clearCaption()">
+        <img src="images/photo4.svg" alt="Robotics demo" data-caption="Robotics Demo" onclick="openPhoto(this)" onmouseover="showCaption(this)" onmouseout="clearCaption()">
+        <img src="images/photo5.svg" alt="Team meeting" data-caption="Team Meeting" onclick="openPhoto(this)" onmouseover="showCaption(this)" onmouseout="clearCaption()">
+        <img src="images/photo6.svg" alt="Awards day" data-caption="Awards Day" onclick="openPhoto(this)" onmouseover="showCaption(this)" onmouseout="clearCaption()">
+      </div>
+      <p id="captionBox" class="highlight">&nbsp;</p>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closePhoto()">
+      <img id="lightboxImg" src="" alt="Big photo">
+      <p>Click anywhere to close</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tech Innovators Club | Harare Institute of Technology</p>
+    <p>Email: <a href="mailto:techclub@example.com">techclub@example.com</a></p>
+    <button id="themeBtn" onclick="toggleTheme()">Switch Dark/Light Mode</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
